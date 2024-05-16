@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Byruak Tours</title>
+  <style>
+    /* Общие стили для всего сайта */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    nav {
+      background-color: #555;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    .col {
+      float: left;
+      width: 100%;
+    }
+    @media only screen and (min-width: 768px) {
+      .col {
+        width: 50%;
+      }
+    }
+    @media only screen and (min-width: 992px) {
+      .col {
+        width: 33.33%;
+      }
+    }
+    /* Стили для каждой страницы */
+    .home {
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    .about {
+      background-color: #e6e6e6;
+      padding: 20px;
+    }
+    .contact {
+      background-color: #d9d9d9;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Byruak Tours</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="dortickets.html">Квитки</a></li>
+      <li><a href="dorcontacts.html">Контакты</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <!-- Главная страница -->
+    <div class="row">
+      <div class="col home">
+        <h2>Ласково просимо на головну сторінку!</h2>
+        <p>Це місто, де ми ділимся останніми новинами.</p>
+      </div>
+    </div>
+    <!-- Страница "О нас" -->
+    <div class="row">
+      <div class="col about">
+        <h2>О нас</h2>
+        <p>Ми - ваш надійний партнер в сфере чего-то там.</p>
+      </div>
+    </div>
+    <!-- Страница "Контакты" -->
+    <div class="row">
+      <div class="col contact">
+        <h2>Контакты</h2>
+        <p>Зв'яжіться з нами по телефону.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
